@@ -5,9 +5,11 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Device.IntelliFan", "Device.IntelliFan\Device.IntelliFan.csproj", "{6E4D92DA-74DB-4FD3-B20F-73A8D6B5F9F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliLamp", "IntelliLamp\IntelliLamp.csproj", "{602B71C3-6193-4CF8-AB83-D4C0AD36B059}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntelliLamp", "IntelliLamp\IntelliLamp.csproj", "{602B71C3-6193-4CF8-AB83-D4C0AD36B059}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{817D7A89-BD77-4550-86A3-9FE9FBEB2407}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{817D7A89-BD77-4550-86A3-9FE9FBEB2407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelliSpeaker", "IntelliSpeaker\IntelliSpeaker.csproj", "{7ABDD860-5AF2-4C9E-B71D-21E65022F96D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{817D7A89-BD77-4550-86A3-9FE9FBEB2407}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{817D7A89-BD77-4550-86A3-9FE9FBEB2407}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{817D7A89-BD77-4550-86A3-9FE9FBEB2407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABDD860-5AF2-4C9E-B71D-21E65022F96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABDD860-5AF2-4C9E-B71D-21E65022F96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABDD860-5AF2-4C9E-B71D-21E65022F96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABDD860-5AF2-4C9E-B71D-21E65022F96D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
