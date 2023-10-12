@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Device.IntelliFan.Models.Devices
+namespace Shared.Models.Devices
 {
     public class DirectMethodDataResponse
     {

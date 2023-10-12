@@ -6,42 +6,48 @@
         xmlns:local="clr-namespace:Device.IntelliFan"
         mc:Ignorable="d"
         Title="Fan" Height="250" Width="200">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+   <Grid>
 
-        <Grid Grid.Row="0">
-            <!--<TextBlock FontFamily="{StaticResource FontAwesome-Regular}" Text="&#xe004;" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="120"/>-->
-            <!--<Ellipse Fill="White" Height="80" Width="80" Margin="2 -12 0 0"/>-->
-            <TextBlock RenderTransformOrigin="0.5 0.5"  FontFamily="{StaticResource FontAwesome-Solid}" Text="&#xf863;" FontSize="65" Margin="0 -14 0 0" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock.RenderTransform>
-                    <RotateTransform x:Name="FanBlade" Angle="0" />
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            
-        </Grid>
 
-        <TextBlock x:Name="ConnectivityStatus"
-                   Grid.Row="1" 
-                   HorizontalAlignment="Center"
-                   Margin="5 20"
-                   Text="Disconnected" 
-                   TextWrapping="Wrap" 
-                   />
-    </Grid>
-    <Window.Resources>
-        <Storyboard x:Key="FanStoryBoard">
-            <DoubleAnimation 
-                        Storyboard.TargetName="FanBlade"
-                        Storyboard.TargetProperty="Angle"
-                        From="0" To="360"
-                        RepeatBehavior="Forever"
-                        />
 
-        </Storyboard>
-                    
-    </Window.Resources>
+     <Grid.RowDefinitions>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="auto"/>
+     </Grid.RowDefinitions>
+
+     <TextBlock x:Name="ConnectivityStatus" Grid.Row="0" Text="Disconnected" HorizontalAlignment="Center" Margin="18 20" TextWrapping="Wrap"/>
+
+     <Grid Grid.Row="0">
+
+         
+         <Ellipse Height="80" Width="80" Margin="2 -12 0 0"  Fill="White"/>
+         <TextBlock RenderTransformOrigin="0.5 0.5" FontFamily="{StaticResource FontAwesome-Solid}" Text="&#xf863;" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="80" Margin="0 -14 0 0">
+             <TextBlock.RenderTransform>
+                 <RotateTransform x:Name="FanBlade" Angle="0">
+
+                 </RotateTransform>
+             </TextBlock.RenderTransform>
+         </TextBlock>
+     </Grid>
+
+
+     <TextBlock Grid.Row="1" x:Name="CurrentMessageSent"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20" />
+
+
+
+ </Grid>
+ <Window.Resources>
+
+     <Storyboard x:Key="FanStoryboard">
+         <DoubleAnimation 
+             Storyboard.TargetName="FanBlade"
+             Storyboard.TargetProperty="Angle"
+             From="0" To="360"
+             RepeatBehavior="Forever"
+             Duration="0:0:1"/>
+
+     </Storyboard>
+
+ </Window.Resources>
     
 </Window>

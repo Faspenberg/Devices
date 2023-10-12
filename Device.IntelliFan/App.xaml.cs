@@ -1,8 +1,8 @@
-﻿using Device.IntelliFan.Models.Devices;
-using Device.IntelliFan.Services;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Shared.Models.Devices;
+using Shared.Services;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
