@@ -36,7 +36,7 @@ namespace AzureFunctions.Methods
                     }
                 }
 
-                return GenerateHttpResponse(req, HttpStatusCode.BadRequest, "An error occured! Parameter deviceId is required.");
+                return GenerateHttpResponse(req, HttpStatusCode.BadRequest, "An error occured! DeviceId is required.");
             }
 
             return null!;

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntelliSpeaker", "IntelliSpeaker\IntelliSpeaker.csproj", "{7ABDD860-5AF2-4C9E-B71D-21E65022F96D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{F2D82B7A-74B2-4E57-81AB-5A682CCCF960}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{F2D82B7A-74B2-4E57-81AB-5A682CCCF960}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
