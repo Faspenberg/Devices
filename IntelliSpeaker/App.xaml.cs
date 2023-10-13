@@ -3,11 +3,8 @@ using System;
 using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Shared.Models.Devices;
 using Shared.Services;
-using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -29,8 +26,11 @@ namespace IntelliSpeaker
                 })
                 .ConfigureServices((config, services) =>
                 {
+                    var conn = config.Configuration.GetConnectionString("Device")!;
+
+
                     services.AddSingleton<MainWindow>();
-                    services.AddSingleton(new DeviceConfiguration(config.Configuration.GetConnectionString("Device")!));
+                    services.AddSingleton(new DeviceConfiguration(conn));
                     services.AddSingleton<DeviceManager>();
                     services.AddSingleton<NetworkManager>();
                 })
