@@ -30,8 +30,11 @@ namespace IntelliLamp
                 })
                 .ConfigureServices((config, services) =>
                 {
+                    var conn = config.Configuration.GetConnectionString("Device")!;
+
+
                     services.AddSingleton<MainWindow>();
-                    services.AddSingleton(new DeviceConfiguration(config.Configuration.GetConnectionString("Device")!));
+                    services.AddSingleton(new DeviceConfiguration(conn));
                     services.AddSingleton<DeviceManager>();
                     services.AddSingleton<NetworkManager>();
                 })
