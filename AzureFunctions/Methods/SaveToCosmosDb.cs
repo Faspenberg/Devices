@@ -24,7 +24,7 @@ namespace AzureFunctions.Methods
             _cosmosClient =
                 new CosmosClient(
                     "AccountEndpoint=https://kyh-smartunitcosmosdb.documents.azure.com:443/;AccountKey=ImCYA5pgXRqg6qSGDu7bkaOn3HRrrlp6nfeyyzDfYizs45y6Esi19ZSbYqGETqXWrnLIiswGjaRHACDbWY58pw==;");
-            var database = _cosmosClient.GetDatabase("IoTDb");
+            var database = _cosmosClient.GetDatabase("CosmosDb");
             _lampContainer = database.GetContainer("lampData");
             _fanContainer = database.GetContainer("fanData");
             _speakerContainer = database.GetContainer("speakerData");
